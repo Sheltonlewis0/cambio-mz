@@ -17,7 +17,7 @@ function renderChart() {
       labels: ranked.value.map((item) => item.code),
       datasets: [{
         data: ranked.value.map((item) => item.valueMzn),
-        backgroundColor: ranked.value.map((_, index) => index === 0 ? '#efc34d' : 'rgba(36, 79, 123, .78)'),
+        backgroundColor: ranked.value.map((_, index) => index === 0 ? '#d9ab39' : 'rgba(23, 104, 76, .78)'),
         borderRadius: 7,
         borderSkipped: false,
         barThickness: 25,
@@ -33,8 +33,8 @@ function renderChart() {
         tooltip: { callbacks: { label: (context) => ` ${formatNumber(context.parsed.x)} MZN · exemplo` } },
       },
       scales: {
-        x: { beginAtZero: true, grid: { color: '#e8edf2', drawBorder: false }, border: { display: false }, ticks: { color: '#748398', font: { family: 'Inter' } } },
-        y: { grid: { display: false }, border: { display: false }, ticks: { color: '#40546b', font: { family: 'Inter', weight: 600 } } },
+        x: { beginAtZero: true, grid: { color: '#e9e7e0', drawBorder: false }, border: { display: false }, ticks: { color: '#777d76', font: { family: 'DM Sans' } } },
+        y: { grid: { display: false }, border: { display: false }, ticks: { color: '#454b44', font: { family: 'DM Sans', weight: 600 } } },
       },
     },
   })
